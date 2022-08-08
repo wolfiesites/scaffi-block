@@ -45,7 +45,7 @@ const Editor = ( props ) => {
 			/>
 			<div { ...blockProps } style={ blockStyle }>
 				<div>
-					
+					#{{blockSPACE}}
 				</div>
 			</div>
 		</Fragment>

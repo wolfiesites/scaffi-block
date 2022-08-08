@@ -11,7 +11,7 @@ const Renderer = ( { className, attributes: { exampleAttribute } } ) => {
 
 	const classes = classnames(
 		className,
-		`wolfie-${blockName}`,
+		`frontkom-${blockName}`,
 		{
 			[ `${blockName}-custom-class-${ exampleAttribute }` ]: exampleAttribute !== '',
 		},
