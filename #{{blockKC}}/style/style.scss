@@ -1,0 +1,59 @@
+/*------------------------------------------
+REM
+------------------------------------------*/
+$font-pixels-base: 16px;
+@function rem($pixels, $context: $font-pixels-base) {
+    @if (unitless($pixels)) {
+        $pixels: $pixels * 1px;
+    }
+
+    @if (unitless($context)) {
+        $context: $context * 1px;
+    }
+
+    @return $pixels / $context * 1rem;
+}
+
+$color-text: #000;
+$color-link: #2f8ad5;
+
+$color-primary: #473deb;
+$color-secondary: #2b0a5b;
+$color-tertiary: #2f8ad5;
+$color-sky-blue: #f6fafe;
+$color-pink: #ffd6dc;
+$color-gray: #eaeaea;
+$color-white: #fff;
+$color-dark-white: #cdd6e4;
+$color-dark-grey: #818ca7;
+$color-dark-blue: #2b0a5b;
+$color-light-black: #1a0637;
+$color-border: #d9e3f2;
+
+//ui kit colors
+$color-primary-100: #ccadf4;
+$color-primary-200: #4f248f;
+$color-primary-300: #2b0a5b;
+$color-primary-400: #1a0637;
+$color-primary-blue: #473deb;
+$color-primary-blue-dark: #2b21c4;
+$color-primary-orange: #ff5757;
+
+$color-blue-secondary-100: #ebf4ff;
+$color-blue-secondary-200: #d7e9ff;
+$color-blue-secondary-300: #c2deff;
+$color-blue-secondary-400: #aed3ff;
+
+$color-orange-secondary-100: #ffebee;
+$color-orange-secondary-200: #ffd6dc;
+$color-orange-secondary-300: #ffc2cb;
+$color-orange-secondary-400: #ffadb9;
+
+$color-gray-100: #f6fafe;
+$color-gray-200: #ecf3fc;
+$color-gray-300: #d7dcea;
+$color-gray-400: #b8c1d5;
+$color-gray-500: #9da7c0;
+$color-gray-600: #818ca7;
+$color-gray-700: #69738c;
+$color-gray-800: #000000;
