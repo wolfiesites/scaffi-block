@@ -4,7 +4,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 // to init / activate the block go one directory higher and follow other blocks convention
-class 
+class #{{blockPC}}
 {
     function __construct()
     {
